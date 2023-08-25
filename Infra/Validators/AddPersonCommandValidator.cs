@@ -1,9 +1,10 @@
 ﻿using FluentValidation;
 using fluentvalidation_adapter_example.Domain.Commands;
+using fluentvalidation_adapter_example.Domain.Validators;
 
 namespace fluentvalidation_adapter_example.Infra.Validators
 {
-    public class AddPersonCommandValidator : AbstractCommandValidator<AddPersonCommand>
+    public class AddPersonCommandValidator : AbstractCommandValidator<AddPersonCommand>, ICommandValidator<AddPersonCommand>
     {
         protected override void LoadRules()
         {

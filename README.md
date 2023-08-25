@@ -8,7 +8,7 @@ Os namespaces `Domain` e `Infra` foram criados no mesmo projeto para facilitar a
 
 ## Utilização
 
-Para adicionar um novo validador, crie uma classe que extenda de `AbstractCommandValidator<T>`, onde `T` é a classe do objeto a ser validado.
+Para adicionar um novo validador, crie uma classe que extenda de `AbstractCommandValidator<T>` e implemente `ICommandValidator<T>`, onde `T` é a classe do objeto a ser validado.
 
 Exemplo do validador `AddPersonCommandValidator`:
 
