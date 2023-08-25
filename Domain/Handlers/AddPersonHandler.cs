@@ -5,7 +5,7 @@ namespace fluentvalidation_adapter_example.Domain.Handlers
 {
     public class AddPersonHandler
     {
-        ICommandValidator<AddPersonCommand> _validator;
+        private ICommandValidator<AddPersonCommand> _validator;
 
         public AddPersonHandler(ICommandValidator<AddPersonCommand> validator)
         {
